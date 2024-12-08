@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -cc_db "cov-report" -cc_dir "memory-cov" -cc_type "sbct" -L "xil_defaultlib" -L "mem_lib" -L "secureip" --snapshot "tb_mem_behav" "xil_defaultlib.tb_mem" -log "elaborate.log" 

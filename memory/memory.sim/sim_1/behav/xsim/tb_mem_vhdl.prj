@@ -1,0 +1,19 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../Downloads/coregenfiles/ul_utils.vhd" \
+"../../../../../Downloads/coregenfiles/blkmemdp_pkg_v6_3.vhd" \
+"../../../../../Downloads/coregenfiles/blkmemdp_mem_init_file_pack_v6_3.vhd" \
+"../../../../../Downloads/coregenfiles/blkmemdp_v6_3.vhd" \
+"../../../../../Downloads/coregenfiles/dp_mem.vhd" \
+"../../../../memory.srcs/sources_1/new/inf_mem.vhd" \
+
+vhdl2008 mem_lib  \
+"../../../../memory.srcs/sources_1/new/mem_package.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../../memory.srcs/sources_1/new/mem_bus.vhd" \
+"../../../../memory.srcs/sources_1/new/dp_mem_config.vhd" \
+"../../../../memory.srcs/sources_1/new/tb_mem.vhd" \
+
+# Do not sort compile order
+nosort
